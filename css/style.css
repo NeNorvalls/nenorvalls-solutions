@@ -1,4 +1,4 @@
-/* Make footer sticky */
+/* Make footer sticky
 html,
 body {
   height: 100%;
@@ -33,4 +33,175 @@ h2 {
 .nav-link.active {
   color: #ff4081 !important;
   font-weight: 600;
+} */
+
+/* ????????????????????????????????????????????? */
+/* Sticky footer base */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+/* Headings */
+h1,
+h2 {
+  font-weight: 800;
+  color: #1a202c;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+/* Navbar - soft but clear */
+.navbar {
+  background-color: #2c3e50 !important; /* deep slate blue */
+  box-shadow: 0 4px 8px rgba(44, 62, 80, 0.25);
+}
+
+.navbar-brand {
+  font-weight: 900;
+  font-size: 1.75rem;
+  color: #f0f4f8 !important; /* very light gray-blue */
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #a0aec0 !important; /* soft lighter gray */
+}
+
+.nav-link {
+  color: #cbd5e1 !important; /* light gray-blue */
+  font-weight: 600;
+  transition: color 0.3s ease;
+  letter-spacing: 0.03em;
+}
+
+.nav-link:hover {
+  color: #e2e8f0 !important; /* lighter gray-blue */
+}
+
+.nav-link.active {
+  color: #f0f4f8 !important;
+  font-weight: 700;
+  border-bottom: 2px solid #f0f4f8;
+  padding-bottom: 0.25rem;
+}
+
+/* Primary color utility */
+.bg-primary {
+  background-color: #3b82f6 !important; /* moderate blue */
+  color: #fff !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  font-weight: 700;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.6);
+  outline: none;
+}
+
+/* Footer - matching header but softer with clear text */
+footer {
+  background-color: #1e40af; /* Same deep navy as navbar */
+  color: #f0f4f8; /* Slightly brighter near-white for contrast */
+  font-size: 0.9rem; /* Slightly larger for readability */
+  font-weight: 600; /* Slightly bolder */
+  letter-spacing: 0.04em; /* Slightly increased letter spacing */
+  padding: 1rem 0;
+  margin-top: auto; /* Push footer to bottom */
+  text-align: center;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  user-select: none;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  line-height: 1.4;
+}
+
+/* Footer links */
+footer a {
+  color: #93c5fd;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #bfdbfe;
+  text-decoration: underline;
+}
+
+/* Cards */
+.card {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.12);
+}
+
+/* Rounded images */
+img {
+  border-radius: 0.5rem;
+}
+
+/* Form inputs */
+.form-control {
+  border-radius: 0.375rem;
+  border: 1px solid #cbd5e1;
+  padding: 0.5rem 0.75rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  color: #1a202c;
+}
+
+.form-control::placeholder {
+  color: #a0aec0;
+}
+
+.form-control:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+  outline: none;
+}
+
+/* Utility spacing */
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
 }
