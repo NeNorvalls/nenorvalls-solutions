@@ -1,1 +1,1 @@
- ![view it here:](https://nenorvalls.github.io/nenorvalls-solutions/)
+ [view it here:](https://nenorvalls.github.io/nenorvalls-solutions/)
